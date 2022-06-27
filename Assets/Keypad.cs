@@ -39,7 +39,6 @@ public class Keypad : MonoBehaviour
         {
             Ans.text = "Correct";
             Door.Play("door_2_open");
-            
             StartCoroutine("StopDoor");
         }
         else
@@ -50,7 +49,7 @@ public class Keypad : MonoBehaviour
 
     IEnumerator StopDoor()
     {
-        audioSource.Play();
+        //audioSource.Play();
         yield return new WaitForSeconds(0.5f);
         Door.enabled = false;
         
