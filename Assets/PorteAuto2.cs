@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PorteAuto : MonoBehaviour
+public class PorteAuto2 : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private Animator Porte;

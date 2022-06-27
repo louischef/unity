@@ -33,7 +33,7 @@ public class Keypad : MonoBehaviour
         if(Ans.text == Answer)
         {
             Ans.text = "Correct";
-            Door.Play("door_3_open");
+            Door.Play("door_2_open");
             StartCoroutine("StopDoor");
         }
         else
