@@ -46,6 +46,5 @@ public class Keypad : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         Door.enabled = false;
-        Destroy(GameObject.FindGameObjectWithTag("keypad"));
     }
 }

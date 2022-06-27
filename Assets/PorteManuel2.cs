@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PorteManuel2 : MonoBehaviour
 {
     [SerializeField] private Text Ans;
     [SerializeField] private Text Infos;
     [SerializeField] private GameObject Keypad;
-
-    //private GameObject keypad;
+    [SerializeField] private GameObject cam1;
+    [SerializeField] private GameObject cam2;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,21 @@ public class PorteManuel2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) )
+        if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
             Affiche();
+
+        if (Keypad.active)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            /*cam1.SetActive(false);
+            cam2.SetActive(false);*/
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            /*cam1.SetActive(true);
+            cam2.SetActive(true);*/
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
