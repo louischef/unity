@@ -11,13 +11,14 @@ public class PorteManuel2 : MonoBehaviour
     [SerializeField] private GameObject Keypad;
     [SerializeField] private GameObject cam1;
     [SerializeField] private GameObject cam2;
-
+   
     // Start is called before the first frame update
     void Start()
     {
         //keypad = GameObject.FindGameObjectWithTag("keypad");
-        Keypad.SetActive(false);
+       
         Infos.gameObject.SetActive(false);
+        Keypad.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,13 +41,19 @@ public class PorteManuel2 : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (Ans.text != "Correct")
+        {
             Infos.gameObject.SetActive(true);
+            
+        }
+           
+
     }
 
     private void OnTriggerExit(Collider other)
     {
         Infos.gameObject.SetActive(false);
         Keypad.SetActive(false);
+        
     }
 
 
