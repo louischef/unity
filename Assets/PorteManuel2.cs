@@ -26,17 +26,17 @@ public class PorteManuel2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
             Affiche();
 
-        if (Keypad.active)
+        if (Keypad.active && Ans.text != "Correct")
         {
             Cursor.lockState = CursorLockMode.None;
-            /*cam1.SetActive(false);
-            cam2.SetActive(false);*/
+            cam1.SetActive(false);
+            cam2.SetActive(false);
         }
         else
         {
             Cursor.lockState = CursorLockMode.Locked;
-            /*cam1.SetActive(true);
-            cam2.SetActive(true);*/
+            cam1.SetActive(true);
+            cam2.SetActive(true);
         }
     }
     private void OnTriggerEnter(Collider other)
