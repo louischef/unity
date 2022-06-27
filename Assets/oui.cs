@@ -22,7 +22,7 @@ public class oui : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (baleine.isPlaying)
+        /*if (baleine.isPlaying)
         {
 
         }
@@ -31,7 +31,7 @@ public class oui : MonoBehaviour
         {
             baleine.transform.Rotate(new Vector3(0, 180, 0), Space.Self);
             baleine.Play("dive2");
-        }
+        }*/
 
 
     }

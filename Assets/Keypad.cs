@@ -7,7 +7,7 @@ public class Keypad : MonoBehaviour
 {
     [SerializeField] private Text Ans;
     [SerializeField] private Animator Door;
-    [SerializeField] private Text Infos;
+    [SerializeField] private Text infos;
 
     private string Answer = "2003";
 
@@ -46,6 +46,6 @@ public class Keypad : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         Door.enabled = false;
-        Infos.gameObject.SetActive(false);
+        Destroy(GameObject.FindGameObjectWithTag("keypad"));
     }
 }
