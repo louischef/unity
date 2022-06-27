@@ -2615,6 +2615,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6512950, guid: 20a37f90760425a44ad7a8650eecc7b7, type: 3}
+      propertyPath: m_Size.z
+      value: 2.3832827
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512950, guid: 20a37f90760425a44ad7a8650eecc7b7, type: 3}
+      propertyPath: m_Center.z
+      value: 0.19164133
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20a37f90760425a44ad7a8650eecc7b7, type: 3}
 --- !u!4 &245975413 stripped
@@ -8389,7 +8397,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2330098, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8405,7 +8413,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770520674}
-  m_LocalRotation: {x: 0.12870671, y: -0.75258315, z: 0.15447341, w: 0.6270496}
+  m_LocalRotation: {x: 0.12870671, y: -0.7525832, z: 0.15447342, w: 0.6270496}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12753,7 +12761,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1107449028}
-  m_LocalRotation: {x: 0.1287067, y: -0.75258315, z: 0.1544734, w: 0.6270496}
+  m_LocalRotation: {x: 0.12870671, y: -0.75258315, z: 0.15447341, w: 0.6270496}
   m_LocalPosition: {x: -25.117477, y: 2.6817617, z: -20.658297}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -13612,7 +13620,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2330098, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -17928,7 +17936,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2330098, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19026,7 +19034,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Appuyer sur E
+  m_Text: Appuyez sur E
 --- !u!222 &1619410587
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19742,7 +19750,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2330098, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -22184,6 +22192,45 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1876388016}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1882013014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c,
+    type: 3}
+  m_PrefabInstance: {fileID: 825696060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1882013015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882013014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f66dd202461fa7e48a1be4e18ecdc3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Porte: {fileID: 1882013016}
+  Infos: {fileID: 1619410586}
+--- !u!95 &1882013016 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9546954, guid: 820591594dcfa124d8a9c5d016d6c22c,
+    type: 3}
+  m_PrefabInstance: {fileID: 825696060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1882013017
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882013014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.000001, y: 4.0475597, z: 1.920704}
+  m_Center: {x: -3.217729e-15, y: 2.0237799, z: -0.53214204}
 --- !u!1001 &1884880680
 PrefabInstance:
   m_ObjectHideFlags: 0
