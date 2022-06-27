@@ -24,10 +24,8 @@ public class PorteManuel2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
-            Affiche();
 
-        if (Keypad.active)
+        if (Keypad.active && Ans.text != "Correct")
         {
             Cursor.lockState = CursorLockMode.None;
             /*cam1.SetActive(false);
@@ -58,8 +56,10 @@ public class PorteManuel2 : MonoBehaviour
         
     }
 
-    void Affiche()
+
+    void OnTriggerStay()
     {
-        Keypad.SetActive(true);
+        if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
+            Keypad.SetActive(true);
     }
 }
