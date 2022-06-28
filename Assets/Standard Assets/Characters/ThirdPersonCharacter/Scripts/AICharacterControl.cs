@@ -27,7 +27,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private void Update()
         {
             if ((target.transform.position.x + target.transform.position.z) - (agent.transform.position.x + agent.transform.position.z) <= 5 && (target.transform.position.x + target.transform.position.z) - (agent.transform.position.x + agent.transform.position.z) >= -5)
-            {
+            { 
                 if (target != null)
                     agent.SetDestination(target.position);
 

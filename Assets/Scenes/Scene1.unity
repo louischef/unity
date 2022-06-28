@@ -23471,6 +23471,12 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &1716715279 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 3d6f7f4e2f7623f4d9eaaf8fce9a0209,
+    type: 3}
+  m_PrefabInstance: {fileID: 846216570}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1716715281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23485,6 +23491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wanderRadius: 15
   wanderTimer: 5
+  anim: {fileID: 1716715279}
+  speed: 1
 --- !u!1001 &1720556545
 PrefabInstance:
   m_ObjectHideFlags: 0

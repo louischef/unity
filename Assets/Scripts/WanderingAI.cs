@@ -11,11 +11,15 @@ public class WanderingAI : MonoBehaviour
     private Transform target;
     private NavMeshAgent agent;
     private float timer;
+    [SerializeField] Animator anim;
+
+    public float speed = 1.0f;
 
     // Use this for initialization
     void OnEnable()
     {
         agent = GetComponent<NavMeshAgent>();
+        //anim = GetComponent<Animator>();
         timer = wanderTimer;
     }
 
@@ -27,8 +31,21 @@ public class WanderingAI : MonoBehaviour
         if (timer >= wanderTimer)
         {
             Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
+            Vector3 targetDirection = newPos - transform.position;
+            float singleStep = speed * Time.deltaTime;
+            anim.SetBool("Walk", false);
             agent.SetDestination(newPos);
+            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
+            Debug.DrawRay(transform.position, newDirection, Color.red);
+            transform.rotation = Quaternion.LookRotation(newDirection);
             timer = 0;
+        }
+        else
+        {
+            Debug.Log(anim);
+            anim.SetBool("Walk", true);
+            //agent.SetDestination(agent.transform.position);
+
         }
     }
 
