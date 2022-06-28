@@ -12,7 +12,7 @@ public class WanderingAI : MonoBehaviour
     private Transform target;
     private NavMeshAgent agent;
     private float timer;
-    [SerializeField] ThirdPersonCharacter anim;
+    [SerializeField] Animator anim;
 
     // Use this for initialization
     void OnEnable()
@@ -30,6 +30,7 @@ public class WanderingAI : MonoBehaviour
         {
             Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
             agent.SetDestination(newPos);
+            anim.SetBool("Forward", true);
             timer = 0;
         }
     }
