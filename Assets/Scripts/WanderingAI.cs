@@ -35,10 +35,11 @@ public class WanderingAI : MonoBehaviour
     {
         if (agent.velocity.magnitude > 0)
         {
-            anim.SetBool("HumanoidIdle", true);
+            anim.SetFloat("Forward", Input.GetAxis("Vertical"));
+            anim.SetFloat("Forward", Input.GetAxis("Horizontal"));
         }
         else
-            anim.SetBool("HumanoidIdle", false);
+            anim.SetFloat("", Input.GetAxis("Horizontal"));
     }
     // Update is called once per frame
     /*void Update()
