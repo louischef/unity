@@ -21999,6 +21999,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ennemi1
       objectReference: {fileID: 0}
+    - target: {fileID: 8531598162154339733, guid: 3d6f7f4e2f7623f4d9eaaf8fce9a0209,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cca62cc627329364fb1b3bd3f992f801, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d6f7f4e2f7623f4d9eaaf8fce9a0209, type: 3}
 --- !u!1001 &1598242233
