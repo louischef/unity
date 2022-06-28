@@ -1,38 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class PorteManuel3 : MonoBehaviour
+public class Boutons : MonoBehaviour
 {
     [SerializeField] Animator Porte;
-    [SerializeField] private Text Infos;
+
+    public int compteur = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    void OnTriggerEnter()
-    {
-        Infos.gameObject.SetActive(true);
-    }
-
-    void OnTriggerExit()
-    {
-        Infos.gameObject.SetActive(false);
-    }
-
-    void OnTriggerStay()
-    {
-        if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
+        if (Bouton1.activer)
+        {
+            compteur++;
+            Bouton1.Ratio();
+        }
+        if (Bouton2.activer)
+        {
+            compteur++;
+            Bouton2.Ratio();
+        }
+        if (Bouton3.activer)
+        {
+            compteur++;
+            Bouton3.Ratio();
+        }
+        if (compteur == 3)
         {
             Porte.Play("door_3_open");
             StartCoroutine("StopDoor");

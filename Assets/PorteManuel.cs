@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PorteManuel3 : MonoBehaviour
+public class PorteManuel : MonoBehaviour
 {
     [SerializeField] Animator Porte;
     [SerializeField] private Text Infos;
@@ -34,8 +35,10 @@ public class PorteManuel3 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
         {
-            Porte.Play("door_3_open");
+            Porte.Play("door_2_open");
             StartCoroutine("StopDoor");
+            if (!(Porte.enabled))
+                SceneManager.LoadScene("Scene4", LoadSceneMode.Single);
         }
     }
 
