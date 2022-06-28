@@ -23,6 +23,15 @@ public class MenuPause : MonoBehaviour
                 Paused();
             }
         }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            if (gameIsPaused)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+            
+        }
+
     }
     void Paused()
     {
@@ -41,7 +50,10 @@ public class MenuPause : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        
+
+       
         SceneManager.LoadScene("MainMenu");
     }
+
+
 }
