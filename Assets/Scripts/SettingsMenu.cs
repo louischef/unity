@@ -13,6 +13,12 @@ public class SettingsMenu : MonoBehaviour
 
     Resolution[] resolutions;
 
+    public void Awake()
+    {
+        Screen.fullScreen = true;
+    }
+
+
     public void Start()
     {
         resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
@@ -37,7 +43,6 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropDown.value = currentResolutionIndex;
         resolutionDropDown.RefreshShownValue();
 
-        Screen.fullScreen = true;
     }
     public void SetVolume(float volume)
     {
