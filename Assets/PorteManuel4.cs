@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PorteManuel4 : MonoBehaviour
@@ -44,6 +45,8 @@ public class PorteManuel4 : MonoBehaviour
         {
             Porte.Play("door_3_open");
             StartCoroutine("StopDoor");
+            if (!(Porte.enabled))
+                SceneManager.LoadScene("Scene5", LoadSceneMode.Single);
         }
     }
 
