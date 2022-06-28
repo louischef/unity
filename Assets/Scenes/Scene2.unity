@@ -1414,7 +1414,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2330098, y: 1}
+    m_SensorSize: {x: 1.5883838, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2279,6 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7b8cc1b56302a48ab1ed962a8b48c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 728672296}
 --- !u!4 &465671603
 Transform:
   m_ObjectHideFlags: 0
@@ -3396,7 +3397,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2330098, y: 1}
+    m_SensorSize: {x: 1.5883838, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6753,7 +6754,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2330098, y: 1}
+    m_SensorSize: {x: 1.5883838, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6970,7 +6971,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2330098, y: 1}
+    m_SensorSize: {x: 1.5883838, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
