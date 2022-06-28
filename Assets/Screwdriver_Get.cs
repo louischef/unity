@@ -30,7 +30,6 @@ public class Screwdriver_Get : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Screwdriver.SetActive(false);
             Get_Screwdriver.gameObject.SetActive(false);
             Need_This.gameObject.SetActive(true);
         }
@@ -38,7 +37,6 @@ public class Screwdriver_Get : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        Screwdriver.SetActive(true);
         Need_This.gameObject.SetActive(false);
         Screwdriver.SetActive(false);
     }
