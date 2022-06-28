@@ -25,5 +25,7 @@ public class attack : MonoBehaviour
         }
         else
             anim.SetBool("hit1", false);
+        if (anim.GetBool("hit1") && anim.GetBool("kick"))
+            anim.SetBool("kick", true);
     }
 }
