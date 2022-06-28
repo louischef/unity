@@ -12,28 +12,48 @@ public class WanderingAI : MonoBehaviour
     private Transform target;
     private NavMeshAgent agent;
     private float timer;
-    [SerializeField] Animator anim;
+    private Animator anim;
 
     // Use this for initialization
-    void OnEnable()
+    void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
+        agent.SetDestination(RandomNavSphere(agent.gameObject.transform.position, wanderRadius, -1));
+        Debug.Log(agent);
+        Debug.Log(anim);
+
         timer = wanderTimer;
     }
 
+    private void Update()
+    {
+        AnimatePlayer();
+    }
+
+    void AnimatePlayer()
+    {
+        if (agent.velocity.magnitude > 0)
+        {
+            anim.SetBool("HumanoidWalk", true);
+        }
+        else
+            anim.SetBool("HumanoidWalk", false);
+    }
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         timer += Time.deltaTime;
 
         if (timer >= wanderTimer)
         {
+            
             Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
-            agent.SetDestination(newPos);
-            anim.SetBool("Forward", true);
+            agent.SetDestination(newPos); 
+            character.Move(agent.desiredVelocity, false, false);
             timer = 0;
         }
-    }
+    }*/
 
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
     {
