@@ -33,7 +33,7 @@ public class Fin : MonoBehaviour
         var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
         if (Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+            SceneManager.LoadScene("Fin", LoadSceneMode.Single);
         }
     }
 }
