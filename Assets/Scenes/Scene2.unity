@@ -5495,7 +5495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu principal [esc]
+  m_Text: Menu principal [L]
 --- !u!222 &1016776472
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7036,7 +7036,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312231194}
-  m_LocalRotation: {x: 0.13679366, y: -0.012588958, z: 0.0017385745, w: 0.99051803}
+  m_LocalRotation: {x: 0.13679366, y: -0.012588976, z: 0.0017385767, w: 0.99051803}
   m_LocalPosition: {x: -27.410778, y: 4.1918, z: 35.222607}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7208,7 +7208,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316603907}
-  m_LocalRotation: {x: 0.13679364, y: -0.012588959, z: 0.0017385744, w: 0.9905181}
+  m_LocalRotation: {x: 0.13679364, y: -0.012588977, z: 0.0017385766, w: 0.9905181}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7425,7 +7425,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330247423}
-  m_LocalRotation: {x: 0.13679364, y: -0.012588959, z: 0.0017385744, w: 0.9905181}
+  m_LocalRotation: {x: 0.13679364, y: -0.012588977, z: 0.0017385766, w: 0.9905181}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
