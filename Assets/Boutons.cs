@@ -34,7 +34,7 @@ public class Boutons : MonoBehaviour
         }
         if (compteur == 3)
         {
-            Porte.Play("door_2_open");
+            Porte.Play("door_3_open");
             StartCoroutine("StopDoor");
         }
     }

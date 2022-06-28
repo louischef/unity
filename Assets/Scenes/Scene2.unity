@@ -1414,7 +1414,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765363, y: 1}
+    m_SensorSize: {x: 1.7780321, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1430,7 +1430,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280846911}
-  m_LocalRotation: {x: 0.20103417, y: -0.017380403, z: 0.0035674605, w: 0.9794236}
+  m_LocalRotation: {x: 0.20103417, y: -0.01738041, z: 0.0035674619, w: 0.9794236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3767,7 +3767,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765363, y: 1}
+    m_SensorSize: {x: 1.7780321, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4444,6 +4444,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &750233777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 198422, guid: 2d927feb0fbf1a7429c095369d395de7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2102785563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &750233778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750233777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008e58a555ae8854aa9c4dd67f7b70fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &750233780 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9573410, guid: 2d927feb0fbf1a7429c095369d395de7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2102785563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &750233784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750233777}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0000005, y: 4.0475597, z: 0.856419}
+  m_Center: {x: -0.00000011920932, y: 2.0237799, z: 0}
 --- !u!1001 &756374748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6612,7 +6649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8a5ead2421b96459136ae3b0fbd215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activer: 0
   Infos: {fileID: 1608964496}
 --- !u!65 &1091212590
 BoxCollider:
@@ -7606,7 +7642,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312231194}
-  m_LocalRotation: {x: 0.20103417, y: -0.017380401, z: 0.0035674605, w: 0.9794235}
+  m_LocalRotation: {x: 0.20103417, y: -0.017380409, z: 0.0035674619, w: 0.9794235}
   m_LocalPosition: {x: -27.30382, y: 4.057, z: 31.808203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7762,7 +7798,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765363, y: 1}
+    m_SensorSize: {x: 1.7780321, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7778,7 +7814,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316603907}
-  m_LocalRotation: {x: 0.20103417, y: -0.01738041, z: 0.0035674619, w: 0.9794236}
+  m_LocalRotation: {x: 0.20103417, y: -0.01738043, z: 0.0035674656, w: 0.9794236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7979,7 +8015,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765363, y: 1}
+    m_SensorSize: {x: 1.7780321, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7995,7 +8031,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330247423}
-  m_LocalRotation: {x: 0.20103417, y: -0.017380403, z: 0.0035674605, w: 0.9794236}
+  m_LocalRotation: {x: 0.20103417, y: -0.01738043, z: 0.0035674656, w: 0.9794236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9081,7 +9117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dfcb08075e25f947aad9a1863f56bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activer: 0
   Infos: {fileID: 1608964496}
 --- !u!65 &1472904454
 BoxCollider:
@@ -9237,12 +9272,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 4.0475597, z: 2.4662342}
   m_Center: {x: 0, y: 2.0237799, z: 0.19177628}
---- !u!95 &1494135421 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9546954, guid: 820591594dcfa124d8a9c5d016d6c22c,
-    type: 3}
-  m_PrefabInstance: {fileID: 342606944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1500773871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10112,7 +10141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0045bfb293a64144a6563716eb55e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activer: 0
   Infos: {fileID: 1608964496}
 --- !u!65 &1687291785
 BoxCollider:
@@ -10542,7 +10570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3967b05e16c674f8897ffb17a21601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Porte: {fileID: 1494135421}
+  Porte: {fileID: 750233780}
   compteur: 0
 --- !u!114 &1741257791
 MonoBehaviour:
@@ -10560,6 +10588,8 @@ MonoBehaviour:
   - {fileID: 638066074}
   - {fileID: 1792451389}
   - {fileID: 164253641}
+  levelToLoad: 
+  Sound: {fileID: 0}
 --- !u!114 &1741257792
 MonoBehaviour:
   m_ObjectHideFlags: 0

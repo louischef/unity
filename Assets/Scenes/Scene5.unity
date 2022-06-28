@@ -1430,7 +1430,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280846911}
-  m_LocalRotation: {x: 0.20103417, y: -0.01738041, z: 0.0035674619, w: 0.9794236}
+  m_LocalRotation: {x: 0.20103417, y: -0.017380413, z: 0.003567462, w: 0.9794236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7605,7 +7605,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312231194}
-  m_LocalRotation: {x: 0.20103417, y: -0.017380409, z: 0.0035674619, w: 0.9794235}
+  m_LocalRotation: {x: 0.20103417, y: -0.017380401, z: 0.0035674605, w: 0.9794235}
   m_LocalPosition: {x: -27.30382, y: 4.057, z: 31.808203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7777,7 +7777,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316603907}
-  m_LocalRotation: {x: 0.20103417, y: -0.017380413, z: 0.003567462, w: 0.9794236}
+  m_LocalRotation: {x: 0.20103417, y: -0.017380403, z: 0.0035674605, w: 0.9794236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7994,7 +7994,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330247423}
-  m_LocalRotation: {x: 0.20103417, y: -0.017380424, z: 0.003567465, w: 0.9794236}
+  m_LocalRotation: {x: 0.20103417, y: -0.01738041, z: 0.0035674619, w: 0.9794236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9233,8 +9233,22 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 4.0475597, z: 2.4662342}
-  m_Center: {x: 0, y: 2.0237799, z: 0.19177628}
+  m_Size: {x: 4, y: 4.0475597, z: 2.416996}
+  m_Center: {x: 0, y: 2.0237799, z: 0.76815605}
+--- !u!114 &1494135420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494135418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3a2b4ad90a0224a9ccd663d6394fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Porte: {fileID: 1494135421}
+  Infos: {fileID: 1608964496}
 --- !u!95 &1494135421 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 9546954, guid: 820591594dcfa124d8a9c5d016d6c22c,
