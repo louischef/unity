@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
@@ -9,8 +10,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     {
         public UnityEngine.AI.NavMeshAgent agent { get; private set; }             // the navmesh agent required for the path finding
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
-        public Transform target;                                    // target to aim for
-        private Vector3 distance;
+        public Transform target;
+        public float wanderRadius;
+        public float wanderTimer;
+
+        private float timer;
 
 
         private void Start()
@@ -19,16 +23,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             agent = GetComponentInChildren<UnityEngine.AI.NavMeshAgent>();
             character = GetComponent<ThirdPersonCharacter>();
 
-	        agent.updateRotation = false;
+            agent.updateRotation = false;
 	        agent.updatePosition = true;
         }
 
 
         private void Update()
         {
-            /*distance = new Vector3(character.transform.position.x - agent.transform.position.x, character.transform.position.y - agent.transform.position.y, character.transform.position.z - agent.transform.position.z);
-            Debug.Log(distance);*/
-            if ((target.transform.position.x + target.transform.position.z) - (agent.transform.position.x + agent.transform.position.z) <= 15 && (target.transform.position.x + target.transform.position.z) - (agent.transform.position.x + agent.transform.position.z) >= -15)
+            if ((target.transform.position.x + target.transform.position.z) - (agent.transform.position.x + agent.transform.position.z) <= 0 && (target.transform.position.x + target.transform.position.z) - (agent.transform.position.x + agent.transform.position.z) >= -0)
             {
                 if (target != null)
                     agent.SetDestination(target.position);
@@ -39,7 +41,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     character.Move(Vector3.zero, false, false);
             }
         }
-
 
         public void SetTarget(Transform target)
         {
