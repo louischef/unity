@@ -10,6 +10,8 @@ public class Get_Card : MonoBehaviour
     [SerializeField] private GameObject Chip;
     [SerializeField] private Text Infos;
 
+    public static bool leBool = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,10 +32,11 @@ public class Get_Card : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
         {
             Finally.gameObject.SetActive(true);
             Infos.gameObject.SetActive(false);
+            leBool = true;
         }
 
     }
