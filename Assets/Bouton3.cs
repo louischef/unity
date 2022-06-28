@@ -11,10 +11,14 @@ public class Bouton3 : MonoBehaviour
     [SerializeField] Text Infos;
 
     public static GameObject bouton;
+    Renderer couleur;
     // Start is called before the first frame update
     void Start()
     {
+        Infos.gameObject.SetActive(false);
+
         bouton = GetComponent<GameObject>();
+        couleur = bouton.GetComponent<Renderer>();
 
         Infos.gameObject.SetActive(false);
     }
@@ -22,7 +26,8 @@ public class Bouton3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (activer)
+            couleur.material.color = Color.red;
     }
 
     private void OnTriggerEnter(Collider other)
