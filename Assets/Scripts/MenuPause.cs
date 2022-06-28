@@ -31,6 +31,12 @@ public class MenuPause : MonoBehaviour
             }
             
         }
+        if (gameIsPaused)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        
+
 
     }
     void Paused()
