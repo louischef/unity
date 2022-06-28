@@ -8,13 +8,17 @@ public class Keypad : MonoBehaviour
     [SerializeField] private Text Ans;
     [SerializeField] private Animator Door;
     [SerializeField] private Text infos;
-    [SerializeField] GameObject keypad;
+    public AudioClip DoorSound;
+    private AudioSource audioSource;
+
 
     private string Answer = "2003";
 
     private void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>(); //identify the AudioSource component.
+        audioSource.clip = DoorSound;
+        audioSource.playOnAwake = false; //Disable the "Play on awake" parameterer because we don't want to play the screamer sound when starting the game.
     }
 
     private void Update()
@@ -45,8 +49,9 @@ public class Keypad : MonoBehaviour
 
     IEnumerator StopDoor()
     {
+        //audioSource.Play();
         yield return new WaitForSeconds(0.5f);
         Door.enabled = false;
-        Destroy(keypad);
+        
     }
 }
