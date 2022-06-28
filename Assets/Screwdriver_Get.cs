@@ -9,17 +9,17 @@ public class Screwdriver_Get : MonoBehaviour
     [SerializeField] private Text Get_Screwdriver;
     [SerializeField] private GameObject Screwdriver;
     [SerializeField] private Text Need_This;
+
     // Start is called before the first frame update
     void Start()
     {
-        Get_Screwdriver.gameObject.SetActive(false);
         Need_This.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,15 +30,17 @@ public class Screwdriver_Get : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Destroy(Screwdriver);
+            Screwdriver.SetActive(false);
             Get_Screwdriver.gameObject.SetActive(false);
             Need_This.gameObject.SetActive(true);
         }
+        
     }
     private void OnTriggerExit(Collider other)
     {
-        Get_Screwdriver.gameObject.SetActive(false);
+        Screwdriver.SetActive(true);
         Need_This.gameObject.SetActive(false);
+        Screwdriver.SetActive(false);
     }
     
 }
