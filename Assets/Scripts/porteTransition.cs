@@ -38,11 +38,14 @@ public class porteTransition : MonoBehaviour
         if (!(Screwdriver.active))
         {
             var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
-            Porte.Play("door_2_open");
-            StartCoroutine("StopDoor");
             Infos.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
-                SceneManager.LoadScene("Scene2", LoadSceneMode.Single);
+            {
+                Porte.Play("door_2_open");
+                StartCoroutine("StopDoor");
+                if (!(Porte.enabled))
+                    SceneManager.LoadScene("Scene2", LoadSceneMode.Single);
+            }
         }
     }
 
