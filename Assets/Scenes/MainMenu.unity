@@ -2211,7 +2211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1748e4ba7cd034bb7bf0dadf40ce6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: SampleScene
+  levelToLoad: Scene1
   settingsWindow: {fileID: 967009385}
 --- !u!1 &1531523546
 GameObject:
