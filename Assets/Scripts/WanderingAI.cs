@@ -35,10 +35,10 @@ public class WanderingAI : MonoBehaviour
     {
         if (agent.velocity.magnitude > 0)
         {
-            anim.SetBool("HumanoidWalk", true);
+            anim.SetBool("HumanoidIdle", true);
         }
         else
-            anim.SetBool("HumanoidWalk", false);
+            anim.SetBool("HumanoidIdle", false);
     }
     // Update is called once per frame
     /*void Update()
