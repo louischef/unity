@@ -18,58 +18,12 @@ public class attack : MonoBehaviour
     void Update()
     {
 
-        if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7f && anim.GetCurrentAnimatorStateInfo(0).IsName("hit1"))
-        {
-            anim.SetBool("hit1", false);
-        }
-        if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7f && anim.GetCurrentAnimatorStateInfo(0).IsName("hit2"))
-        {
-            anim.SetBool("hit2", false);
-        }
-        if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7f && anim.GetCurrentAnimatorStateInfo(0).IsName("hit3"))
-        {
-            anim.SetBool("hit3", false);
-            noOfClicks = 0;
-        }
-
-
-        if (Time.time - lastClickedTime > maxComboDelay)
-        {
-            noOfClicks = 0;
-        }
-
-        //cooldown time
-        if (Time.time > nextFireTime)
-        {
-            // Check for mouse input
-            if (Input.GetMouseButtonDown(0))
-            {
-                OnClick();
-
-            }
-        }
-    }
-
-    void OnClick()
-    {
-        //so it looks at how many clicks have been made and if one animation has finished playing starts another one.
-        lastClickedTime = Time.time;
-        noOfClicks++;
-        if (noOfClicks == 1)
+   // Check for mouse input
+        if (Input.GetMouseButtonDown(0))
         {
             anim.SetBool("hit1", true);
         }
-        noOfClicks = Mathf.Clamp(noOfClicks, 0, 20);
-
-        if (noOfClicks >= 2 && anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7f && anim.GetCurrentAnimatorStateInfo(0).IsName("hit1"))
-        {
+        else
             anim.SetBool("hit1", false);
-            anim.SetBool("hit2", true);
-        }
-        if (noOfClicks >= 3 && anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7f && anim.GetCurrentAnimatorStateInfo(0).IsName("hit2"))
-        {
-            anim.SetBool("hit2", false);
-            anim.SetBool("hit3", true);
-        }
     }
 }
