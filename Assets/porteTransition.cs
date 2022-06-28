@@ -10,9 +10,13 @@ public class porteTransition : MonoBehaviour
     [SerializeField] private Animator Porte;
     [SerializeField] private Text Infos;
     private Scene scene;
+    private AssetBundle myLoadedAssetBundle;
+    private string[] scenePaths;
     void Start()
     {
         Infos.gameObject.SetActive(false);
+        myLoadedAssetBundle = AssetBundle.LoadFromFile("Assets/scenes");
+        scenePaths = myLoadedAssetBundle.GetAllScenePaths();
     }
 
     // Update is called once per frame
@@ -33,7 +37,7 @@ public class porteTransition : MonoBehaviour
         var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
         if (Input.GetKeyDown(KeyCode.E) && Infos.gameObject.active)
         {
-            scene = SceneManager.LoadScene("Scene2", parameters);
+            SceneManager.LoadScene("Scene2", LoadSceneMode.Single);
             Infos.gameObject.SetActive(false);
         }
 
